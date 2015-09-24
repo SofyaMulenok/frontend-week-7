@@ -49,6 +49,9 @@ footer{
   clear: both;
 }
 
+#portfolio img {
+  width: 25%;
+}
 
 
 .cool-class{
@@ -87,15 +90,19 @@ Edit after here!
     You can also write it like this:
       margin: 0 auto;
   */
-
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
 }
+
+
+
+
 header{
-  width: 960px;
+  width: 100%;
 }
 
 nav {
-  width: 960px;
+  width: 100%;
 }
 
 
@@ -105,13 +112,13 @@ aside{
 }
 
 aside img{
-  width: 270px;
+  width: 100%;
 }
 
 
 article{
   float: right;
-  width: 660px;
+  width: 68.75%;
 }
 
 article img{
@@ -120,3 +127,45 @@ article img{
 }
 
 
+
+@media(max-width: 960px){
+  .container {
+    width: 100%;
+  }
+
+  aside { width: 31.25%; }  
+
+
+  header {
+    width: 100%;
+    }
+
+}
+
+@media(max-width: 932px){
+  #portfolio img{
+    width: 33%;
+  }
+}
+
+
+
+@media(max-width: 678px){
+  h1 {
+    font-size: 5rem;
+  }
+
+  article{
+    width: 100%;
+    float: left;
+  }
+
+  aside {
+    width: 100%;
+  }
+  
+  #portfolio img{
+    width: 50%;
+  }
+
+}
